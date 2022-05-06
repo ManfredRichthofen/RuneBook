@@ -57,10 +57,10 @@
     "ws": "^8.4.2"
   },
   "devDependencies": {
-    "electron": "^13.6.7",
-    "electron-builder": "^22.14.13",
-    "electron-packager": "^15.4.0",
-    "xo": "^0.47.0"
+    "electron": "13.6.7",
+    "electron-builder": "22.14.13",
+    "electron-packager": "15.4.0",
+    "xo": "0.47.0"
   },
   "xo": {
     "envs": [
