@@ -33,8 +33,8 @@ jobs:
       - name: npm run release for windows
         if: matrix.os == 'windows-latest' && github.event_name == 'push'
         run: |
-          yarn run 
+          yarn run dist:win
       - name: npm run release for mac and linux
         if: matrix.os != 'windows-latest' || github.event_name != 'push'
         run: |
-          yarn run
+          yarn run dist:lin
