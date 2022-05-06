@@ -32,7 +32,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: npm run dist:mac
-
+    - uses: actions/upload-artifact@v3
+      with:
+       name: Mac
+       path: dist/
   build_on_win:
     runs-on: windows-latest
     steps:
@@ -46,3 +49,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: npm run dist:win
+    - uses: actions/upload-artifact@v3
+      with:
+       name: Windows
+       path: dist/
