@@ -57,7 +57,7 @@
     "ws": "^8.4.2"
   },
   "devDependencies": {
-    "electron": "13.6.9",
+    "electron": "18.2.0",
     "electron-builder": "22.14.13",
     "electron-packager": "15.5.1",
     "xo": "0.47.0"
