@@ -13,7 +13,7 @@ jobs:
 
       - name: Install Node.js
         uses: actions/setup-node@v2
-          with:
+        with:
             node-version: '12,13,14,15,16'
   
       - name: Install Dependencies
