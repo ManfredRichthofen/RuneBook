@@ -15,7 +15,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: npm run pub:lin
-
+    - uses: actions/upload-artifact@v3
+      with:
+       name: Linux
+       path: dist/
   build_on_mac:
     runs-on: macos-latest
     steps:
