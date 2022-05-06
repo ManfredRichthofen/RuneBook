@@ -23,13 +23,6 @@
     "dist:all": "electron-builder -mwl -p onTagOrDraft"
   },
   "build": {
-    "publish": [
-      {
-        "provider": "github",
-        "owner": "ManfredRichthofen",
-        "repo": "ManfredRichthofen/RuneBook",
-      }
-    ]
     "artifactName": "${productName}_${version}.${ext}",
     "mac": {
       "icon": "build/icon.icns"
