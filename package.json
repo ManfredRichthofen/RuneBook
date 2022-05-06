@@ -28,7 +28,6 @@
         "provider": "github",
         "owner": "ManfredRichthofen",
         "repo": "ManfredRichthofen/RuneBook",
-        "token": ${{ secrets.GITHUB_TOKEN }}
       }
     ]
     "artifactName": "${productName}_${version}.${ext}",
