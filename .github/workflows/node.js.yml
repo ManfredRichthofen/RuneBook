@@ -24,4 +24,4 @@ jobs:
         run: yarn install
 
       - name: Build Project
-        run: yarn run build:production
+        run: yarn run build:prod
