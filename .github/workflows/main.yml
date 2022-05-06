@@ -1,0 +1,30 @@
+name: Release Next CI
+on:
+  push:
+    branches:
+      - master
+      - releases
+      - native-refactor
+  pull_request:
+    branches:
+      - master
+      - releases
+jobs:
+  release:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+
+    steps:
+    - uses: actions/checkout@v2       
+    - uses: actions/setup-node@master
+      with:
+        node-version: 14
+    - name: install dependencies
+      run: npm install
+    - name: publish
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: npm run build
