@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "electron": "13.6.9",
-    "electron-builder": "23.0.3",
+    "electron-builder": "23.6.0",
     "electron-packager": "15.5.1",
     "xo": "0.48.0"
   },
