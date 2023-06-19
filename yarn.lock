@@ -1709,9 +1709,7 @@ electron-publish@23.0.2:
     mime "^2.5.2"
 
 electron-store@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.npmjs.org/electron-store/-/electron-store-8.0.1.tgz"
-  integrity sha512-ZyLvNywiqSpbwC/pp89O/AycVWY/UJIkmtyzF2Bd0Nm/rLmcFc0NTGuLdg6+LE8mS8qsiK5JMoe4PnrecLHH5w==
+  version "8.1.0"
   dependencies:
     conf "^10.0.3"
     type-fest "^1.0.2"
